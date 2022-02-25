@@ -9,6 +9,17 @@
         opacity: 0.7;
     }
 
+    &.background__default {
+        background: linear-gradient(289.03deg, #d6dadb -75.09%, rgba(230, 233, 233, 0.24) 74.75%),
+            linear-gradient(0deg, #ffffff, #ffffff);
+    }
+
+    &:hover:not(.faded) {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.16) 100%),
+            linear-gradient(289.03deg, #d6dadb -75.09%, rgba(230, 233, 233, 0.24) 74.75%),
+            linear-gradient(0deg, #ffffff, #ffffff);
+    }
+
     .logo {
         width: 64px;
         height: 40px;
@@ -63,8 +74,38 @@
         }
     }
 
+    &.demo {
+        background: linear-gradient(135deg, #FF6444, #ffffff 15%, #FF6444 74%);
+
+        &:hover:not(.faded) {
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.16) 100%),
+            linear-gradient(135deg, #FF6444, #ffffff 15%, #FF6444 74%);
+        }
+
+        &.dark {
+            background: linear-gradient(135deg, #FF6444, #0e0e0e 15%, #FF6444 74%);
+
+            &:hover:not(.faded) {
+                background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.16) 100%),
+                linear-gradient(135deg, #FF6444, #0e0e0e 15%, #FF6444 74%);
+            }
+        }
+    }
+
+
     &.dark {
         color: #ffffff;
+
+        &.background__default {
+            background: linear-gradient(289.03deg, #242828 -75.09%, rgba(50, 55, 56, 0.24) 74.75%),
+                linear-gradient(0deg, #0e0e0e, #0e0e0e);
+        }
+
+        &:hover:not(.faded) {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.16) 100%),
+                linear-gradient(289.03deg, #242828 -75.09%, rgba(50, 55, 56, 0.24) 74.75%),
+                linear-gradient(0deg, #0e0e0e, #0e0e0e);
+        }
     }
 
     .title {
